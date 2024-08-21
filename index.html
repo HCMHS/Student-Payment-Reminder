@@ -458,9 +458,10 @@ function Search(pNo = "")
             document.getElementsByName("oth_nm")[0].value = value[7];
             document.getElementsByName("oth_fee")[0].value = value[8];
             document.getElementsByName("due")[0].value = value[9];
-            document.getElementsByName("tot")[0].value = value[10];
-            document.getElementsByName("idate")[0].value = value[11];
-            document.getElementsByName("ldate")[0].value = value[12];
+            document.getElementsByName("due02")[0].value = value[10];
+            document.getElementsByName("tot")[0].value = value[11];
+            document.getElementsByName("idate")[0].value = value[12];
+            document.getElementsByName("ldate")[0].value = value[13];
           }
           else
           {
@@ -640,12 +641,16 @@ $(document).ready(function() {
             <input type="text" id="due" name="due" disabled />
           </div>
           <div class="input-box">
-            <label>Total:</label>
-            <input type="text" id="tot" name="tot" disabled />
-          </div>
+            <label>Due:</label>
+            <input type="text" id="due02" name="due02" disabled />
+          </div>  
         </div>
         
         <div class="column">
+          <div class="input-box">
+            <label>Total:</label>
+            <input type="text" id="tot" name="tot" disabled />
+          </div>
           <div class="input-box">
             <label>Last Date:</label>
             <input type="text" id="ldate" name="ldate" disabled />
